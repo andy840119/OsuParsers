@@ -1,7 +1,7 @@
 ﻿using OsuParsers.Database.Objects;
-using OsuParsers.Writers;
 using System;
 using System.Collections.Generic;
+using OsuParsers.Encoders;
 
 namespace OsuParsers.Database
 {
@@ -12,7 +12,7 @@ namespace OsuParsers.Database
 
         public void Write(string path)
         {
-            DatabaseWriter.WriteScoresDatabase(path, this);
+            DatabaseEncoder.WriteScoresDatabase(path, this);
         }
     }
 }

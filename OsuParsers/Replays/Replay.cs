@@ -1,8 +1,8 @@
 ﻿using OsuParsers.Enums;
 using OsuParsers.Replays.Objects;
-using OsuParsers.Writers;
 using System;
 using System.Collections.Generic;
+using OsuParsers.Encoders;
 
 namespace OsuParsers.Replays
 {
@@ -32,7 +32,7 @@ namespace OsuParsers.Replays
 
         public void Write(string path)
         {
-            ReplayWriter.Write(this, path);
+            ReplayEncoder.Write(this, path);
         }
     }
 }

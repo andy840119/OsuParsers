@@ -1,6 +1,6 @@
 ﻿using OsuParsers.Database.Objects;
-using OsuParsers.Writers;
 using System.Collections.Generic;
+using OsuParsers.Encoders;
 
 namespace OsuParsers.Database
 {
@@ -11,7 +11,7 @@ namespace OsuParsers.Database
 
         public void Write(string path)
         {
-            DatabaseWriter.WritePresenceDatabase(path, this);
+            DatabaseEncoder.WritePresenceDatabase(path, this);
         }
     }
 }

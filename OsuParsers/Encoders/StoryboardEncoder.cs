@@ -1,10 +1,10 @@
-﻿using OsuParsers.Helpers;
+﻿using System.Collections.Generic;
+using OsuParsers.Helpers;
 using OsuParsers.Storyboards;
-using System.Collections.Generic;
 
-namespace OsuParsers.Writers
+namespace OsuParsers.Encoders
 {
-    internal class StoryboardWriter
+    internal class StoryboardEncoder
     {
         public static List<string> Write(Storyboard storyboard)
         {

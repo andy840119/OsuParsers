@@ -1,11 +1,11 @@
-﻿using OsuParsers.Database;
-using OsuParsers.Serialization;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
+using OsuParsers.Database;
+using OsuParsers.Serialization;
 
-namespace OsuParsers.Writers
+namespace OsuParsers.Encoders
 {
-    internal class DatabaseWriter
+    internal class DatabaseEncoder
     {
         public static void WriteOsuDatabase(string path, OsuDatabase db)
         {

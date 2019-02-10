@@ -1,13 +1,13 @@
 ﻿using System.Collections.Generic;
-using OsuParsers.Beatmaps;
-using OsuParsers.Beatmaps.Sections;
-using OsuParsers.Beatmaps.Objects;
-using OsuParsers.Helpers;
 using System.Drawing;
+using OsuParsers.Beatmaps;
+using OsuParsers.Beatmaps.Objects;
+using OsuParsers.Beatmaps.Sections;
+using OsuParsers.Helpers;
 
-namespace OsuParsers.Writers
+namespace OsuParsers.Encoders
 {
-    internal class BeatmapWriter
+    internal class BeatmapEncoder
     {
         public static List<string> Write(Beatmap beatmap)
         {

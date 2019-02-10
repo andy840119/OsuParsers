@@ -2,6 +2,7 @@
 using OsuParsers.Storyboards.Interfaces;
 using System.Collections.Generic;
 using System.IO;
+using OsuParsers.Encoders;
 
 namespace OsuParsers.Storyboards
 {
@@ -34,7 +35,7 @@ namespace OsuParsers.Storyboards
 
         public void Write(string path)
         {
-            File.WriteAllLines(path, Writers.StoryboardWriter.Write(this));
+            File.WriteAllLines(path, StoryboardEncoder.Write(this));
         }
     }
 }

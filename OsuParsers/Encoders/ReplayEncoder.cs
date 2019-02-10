@@ -1,15 +1,15 @@
-﻿using OsuParsers.Enums;
+﻿using System.IO;
+using System.Text;
+using OsuParsers.Enums;
 using OsuParsers.Helpers;
 using OsuParsers.Replays;
 using OsuParsers.Replays.Objects;
 using OsuParsers.Replays.SevenZip;
 using OsuParsers.Serialization;
-using System.IO;
-using System.Text;
 
-namespace OsuParsers.Writers
+namespace OsuParsers.Encoders
 {
-    internal class ReplayWriter
+    internal class ReplayEncoder
     {
         public static void Write(Replay replay, string path)
         {

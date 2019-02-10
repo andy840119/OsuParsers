@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Globalization;
 using System.IO;
+using OsuParsers.Encoders;
 
 namespace OsuParsers.Beatmaps
 {
@@ -32,7 +33,7 @@ namespace OsuParsers.Beatmaps
 
         public void Write(string path)
         {
-            File.WriteAllLines(path, Writers.BeatmapWriter.Write(this));
+            File.WriteAllLines(path, BeatmapEncoder.Write(this));
         }
     }
 }
