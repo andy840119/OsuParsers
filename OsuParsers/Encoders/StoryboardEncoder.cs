@@ -4,9 +4,9 @@ using OsuParsers.Storyboards;
 
 namespace OsuParsers.Encoders
 {
-    internal class StoryboardEncoder
+    public class StoryboardEncoder
     {
-        public static List<string> Write(Storyboard storyboard)
+        public List<string> Write(Storyboard storyboard)
         {
             var list = new List<string>();
             list.AddRange(new List<string>

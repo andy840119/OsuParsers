@@ -9,9 +9,9 @@ using OsuParsers.Serialization;
 
 namespace OsuParsers.Encoders
 {
-    internal class ReplayEncoder
+    public class ReplayEncoder
     {
-        public static void Write(Replay replay, string path)
+        public void Write(Replay replay, string path)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {

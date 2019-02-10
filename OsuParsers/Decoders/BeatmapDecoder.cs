@@ -13,7 +13,7 @@ using System.Linq;
 
 namespace OsuParsers.Decoders
 {
-    internal class BeatmapDecoder
+    public class BeatmapDecoder
     {
         private Beatmap Beatmap;
         private Sections currentSection = Sections.None;
@@ -443,6 +443,7 @@ namespace OsuParsers.Decoders
         }
 
         #region Old slider end time algorithm
+
         //kept it just in case if the new one will work worse
         private int OldSliderEndTimeAlgorithm(int startTime, int repeats, double pixelLength)
         {
@@ -493,6 +494,7 @@ namespace OsuParsers.Decoders
 
             return null;
         }
+
         #endregion
     }
 }

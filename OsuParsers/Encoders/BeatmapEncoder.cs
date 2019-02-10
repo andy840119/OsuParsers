@@ -7,9 +7,9 @@ using OsuParsers.Helpers;
 
 namespace OsuParsers.Encoders
 {
-    internal class BeatmapEncoder
+    public class BeatmapEncoder
     {
-        public static List<string> Write(Beatmap beatmap)
+        public List<string> Write(Beatmap beatmap)
         {
             var Sections = new List<List<string>>
             {
@@ -33,7 +33,7 @@ namespace OsuParsers.Encoders
 
         #region Sections
 
-        public static List<string> GeneralSection(GeneralSection section)
+        public List<string> GeneralSection(GeneralSection section)
         {
             var list = BaseListFormat("General");
             list.AddRange(new List<string>
@@ -62,7 +62,7 @@ namespace OsuParsers.Encoders
             return list;
         }
 
-        public static List<string> EditorSection(EditorSection section)
+        public List<string> EditorSection(EditorSection section)
         {
             var list = BaseListFormat("Editor");
             if (section.Bookmarks != null)
@@ -79,7 +79,7 @@ namespace OsuParsers.Encoders
             return list;
         }
 
-        public static List<string> MetadataSection(MetadataSection section)
+        public List<string> MetadataSection(MetadataSection section)
         {
             return new List<string>
             {
@@ -98,7 +98,7 @@ namespace OsuParsers.Encoders
             };
         }
 
-        public static List<string> DifficultySection(DifficultySection section)
+        public List<string> DifficultySection(DifficultySection section)
         {
             return new List<string>
             {
@@ -113,7 +113,7 @@ namespace OsuParsers.Encoders
             };
         }
 
-        public static List<string> EventsSection(EventsSection section)
+        public List<string> EventsSection(EventsSection section)
         {
             var list = BaseListFormat("Events");
             list.AddRange(new List<string>
@@ -143,7 +143,7 @@ namespace OsuParsers.Encoders
             return list;
         }
 
-        public static List<string> TimingPoints(List<TimingPoint> timingPoints)
+        public List<string> TimingPoints(List<TimingPoint> timingPoints)
         {
             if (timingPoints.Count == 0)
                 return new List<string>();
@@ -155,7 +155,7 @@ namespace OsuParsers.Encoders
             return list;
         }
 
-        public static List<string> Colours(List<Color> colours)
+        public List<string> Colours(List<Color> colours)
         {
             if (colours.Count == 0)
                 return new List<string>();
@@ -167,7 +167,7 @@ namespace OsuParsers.Encoders
             return list;
         }
 
-        public static List<string> HitObjects(List<HitObject> hitObjects)
+        public List<string> HitObjects(List<HitObject> hitObjects)
         {
             var list = BaseListFormat("HitObjects");
             if (hitObjects != null)
@@ -177,12 +177,12 @@ namespace OsuParsers.Encoders
 
         #endregion
 
-        public static List<string> BaseListFormat(string SectionName)
+        public List<string> BaseListFormat(string sectionName)
         {
             return new List<string>
             {
                 string.Empty,
-                $"[{SectionName}]",
+                $"[{sectionName}]",
             };
         }
     }
