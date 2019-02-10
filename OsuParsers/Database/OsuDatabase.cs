@@ -19,7 +19,7 @@ namespace OsuParsers.Database
 
         public void Write(string path)
         {
-            DatabaseEncoder.WriteOsuDatabase(path, this);
+            DatabaseEncoder.EncodeOsuDatabase(path, this);
         }
     }
 }

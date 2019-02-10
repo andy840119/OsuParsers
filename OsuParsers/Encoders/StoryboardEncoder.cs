@@ -6,7 +6,7 @@ namespace OsuParsers.Encoders
 {
     public class StoryboardEncoder
     {
-        public List<string> Write(Storyboard storyboard)
+        public List<string> Encode(Storyboard storyboard)
         {
             var list = new List<string>();
             list.AddRange(new List<string>

@@ -33,7 +33,7 @@ namespace OsuParsers.Beatmaps
 
         public void Write(string path)
         {
-            File.WriteAllLines(path, BeatmapEncoder.Write(this));
+            File.WriteAllLines(path, BeatmapEncoder.Encode(this));
         }
     }
 }

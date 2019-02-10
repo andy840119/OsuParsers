@@ -35,7 +35,7 @@ namespace OsuParsers.Storyboards
 
         public void Write(string path)
         {
-            File.WriteAllLines(path, StoryboardEncoder.Write(this));
+            File.WriteAllLines(path, StoryboardEncoder.Encode(this));
         }
     }
 }

@@ -11,7 +11,7 @@ namespace OsuParsers.Encoders
 {
     public class ReplayEncoder
     {
-        public void Write(Replay replay, string path)
+        public void Encode(Replay replay, string path)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {

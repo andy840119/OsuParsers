@@ -9,7 +9,7 @@ namespace OsuParsers.Encoders
 {
     public class BeatmapEncoder
     {
-        public List<string> Write(Beatmap beatmap)
+        public List<string> Encode(Beatmap beatmap)
         {
             var Sections = new List<List<string>>
             {

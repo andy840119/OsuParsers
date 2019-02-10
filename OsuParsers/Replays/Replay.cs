@@ -32,7 +32,7 @@ namespace OsuParsers.Replays
 
         public void Write(string path)
         {
-            ReplayEncoder.Write(this, path);
+            ReplayEncoder.Encode(this, path);
         }
     }
 }

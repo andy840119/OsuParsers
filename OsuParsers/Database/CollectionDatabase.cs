@@ -12,7 +12,7 @@ namespace OsuParsers.Database
 
         public void Write(string path)
         {
-            DatabaseEncoder.WriteCollectionDatabase(path, this);
+            DatabaseEncoder.EncodeCollectionDatabase(path, this);
         }
     }
 }

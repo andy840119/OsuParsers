@@ -11,7 +11,7 @@ namespace OsuParsers.Database
 
         public void Write(string path)
         {
-            DatabaseEncoder.WritePresenceDatabase(path, this);
+            DatabaseEncoder.EncodePresenceDatabase(path, this);
         }
     }
 }

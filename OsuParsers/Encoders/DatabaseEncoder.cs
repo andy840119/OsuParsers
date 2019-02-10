@@ -7,7 +7,7 @@ namespace OsuParsers.Encoders
 {
     public class DatabaseEncoder
     {
-        public void WriteOsuDatabase(string path, OsuDatabase db)
+        public void EncodeOsuDatabase(string path, OsuDatabase db)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {
@@ -91,7 +91,7 @@ namespace OsuParsers.Encoders
             }
         }
 
-        public void WriteCollectionDatabase(string path, CollectionDatabase db)
+        public void EncodeCollectionDatabase(string path, CollectionDatabase db)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {
@@ -109,7 +109,7 @@ namespace OsuParsers.Encoders
             }
         }
 
-        public void WriteScoresDatabase(string path, ScoresDatabase db)
+        public void EncodeScoresDatabase(string path, ScoresDatabase db)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {
@@ -147,7 +147,7 @@ namespace OsuParsers.Encoders
             }
         }
 
-        public void WritePresenceDatabase(string path, PresenceDatabase db)
+        public void EncodePresenceDatabase(string path, PresenceDatabase db)
         {
             using (SerializationWriter writer = new SerializationWriter(new FileStream(path, FileMode.Create, FileAccess.Write, FileShare.Read)))
             {
