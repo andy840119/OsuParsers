@@ -33,28 +33,28 @@ namespace OsuParsers
         /// </summary>
         /// <param name="pathToOsuDb">Path to the osu!.db file.</param>
         /// <returns>A usable <see cref="OsuDatabase"/>.</returns>
-        public static OsuDatabase ParseOsuDatabase(string pathToOsuDb) => databaseDecoder.DecodeOsu(File.OpenRead(pathToOsuDb));
+        public static OsuDatabase ParseOsuDatabase(string pathToOsuDb) => databaseDecoder.DecodeOsuDatabase(File.OpenRead(pathToOsuDb));
 
         /// <summary>
         /// Parses collection.db file.
         /// </summary>
         /// <param name="pathToCollectionDb">Path to the collection.db file.</param>
         /// <returns>A usable <see cref="CollectionDatabase"/>.</returns>
-        public static CollectionDatabase ParseCollectionDatabase(string pathToCollectionDb) => databaseDecoder.DecodeCollection(File.OpenRead(pathToCollectionDb));
+        public static CollectionDatabase ParseCollectionDatabase(string pathToCollectionDb) => databaseDecoder.DecodeCollectionDatabase(File.OpenRead(pathToCollectionDb));
 
         /// <summary>
         /// Parses scores.db file.
         /// </summary>
         /// <param name="pathToScoresDb">Path to the scores.db file.</param>
         /// <returns>A usable <see cref="ScoresDatabase"/>.</returns>
-        public static ScoresDatabase ParseScoresDatabase(string pathToScoresDb) => databaseDecoder.DecodeScores(File.OpenRead(pathToScoresDb));
+        public static ScoresDatabase ParseScoresDatabase(string pathToScoresDb) => databaseDecoder.DecodeScoresDatabase(File.OpenRead(pathToScoresDb));
 
         /// <summary>
         /// Parses presence.db file.
         /// </summary>
         /// <param name="pathToPresenceDb">Path to the presence.db file.</param>
         /// <returns>A usable <see cref="PresenceDatabase"/>.</returns>
-        public static PresenceDatabase ParsePresenceDatabase(string pathToPresenceDb) => databaseDecoder.DecodePresence(File.OpenRead(pathToPresenceDb));
+        public static PresenceDatabase ParsePresenceDatabase(string pathToPresenceDb) => databaseDecoder.DecodePresenceDatabase(File.OpenRead(pathToPresenceDb));
 
         /// <summary>
         /// Parses .osr file.

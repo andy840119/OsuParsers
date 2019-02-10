@@ -10,7 +10,7 @@ namespace OsuParsers.Decoders
 {
     public class DatabaseDecoder
     {
-        public OsuDatabase DecodeOsu(Stream s)
+        public OsuDatabase DecodeOsuDatabase(Stream s)
         {
             OsuDatabase db = new OsuDatabase();
             SerializationReader r = new SerializationReader(s);
@@ -107,7 +107,7 @@ namespace OsuParsers.Decoders
             return db;
         }
 
-        public CollectionDatabase DecodeCollection(Stream s)
+        public CollectionDatabase DecodeCollectionDatabase(Stream s)
         {
             CollectionDatabase db = new CollectionDatabase();
             SerializationReader r = new SerializationReader(s);
@@ -133,7 +133,7 @@ namespace OsuParsers.Decoders
             return db;
         }
 
-        public ScoresDatabase DecodeScores(Stream s)
+        public ScoresDatabase DecodeScoresDatabase(Stream s)
         {
             ScoresDatabase db = new ScoresDatabase();
             SerializationReader r = new SerializationReader(s);
@@ -178,7 +178,7 @@ namespace OsuParsers.Decoders
             return db;
         }
 
-        public PresenceDatabase DecodePresence(Stream s)
+        public PresenceDatabase DecodePresenceDatabase(Stream s)
         {
             PresenceDatabase db = new PresenceDatabase();
             SerializationReader r = new SerializationReader(s);

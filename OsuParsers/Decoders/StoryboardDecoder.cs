@@ -17,6 +17,7 @@ namespace OsuParsers.Decoders
         private CommandGroup commandGroup;
 
         private Storyboard storyboard;
+
         public Storyboard Decode(string[] lines)
         {
             storyboard = new Storyboard();
