@@ -30,10 +30,5 @@ namespace OsuParsers.Beatmaps
             DifficultySection = new DifficultySection();
             EventsSection = new EventsSection();
         }
-
-        public void Write(string path)
-        {
-            File.WriteAllLines(path, BeatmapEncoder.Encode(this));
-        }
     }
 }

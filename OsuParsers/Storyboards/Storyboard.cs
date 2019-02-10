@@ -32,10 +32,5 @@ namespace OsuParsers.Storyboards
                     return BackgroundLayer;
             }
         }
-
-        public void Write(string path)
-        {
-            File.WriteAllLines(path, StoryboardEncoder.Encode(this));
-        }
     }
 }

@@ -16,10 +16,5 @@ namespace OsuParsers.Database
         public int BeatmapCount { get; set; }
         public List<DbBeatmap> Beatmaps { get; private set; } = new List<DbBeatmap>();
         public Permissions Permissions { get; set; }
-
-        public void Write(string path)
-        {
-            DatabaseEncoder.EncodeOsuDatabase(path, this);
-        }
     }
 }

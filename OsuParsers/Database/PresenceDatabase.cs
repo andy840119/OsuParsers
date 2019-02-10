@@ -8,10 +8,5 @@ namespace OsuParsers.Database
     {
         public int OsuVersion { get; set; }
         public List<Player> Players { get; private set; } = new List<Player>();
-
-        public void Write(string path)
-        {
-            DatabaseEncoder.EncodePresenceDatabase(path, this);
-        }
     }
 }

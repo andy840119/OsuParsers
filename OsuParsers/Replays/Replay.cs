@@ -29,10 +29,5 @@ namespace OsuParsers.Replays
         public List<LifeFrame> LifeFrames { get; set; } = new List<LifeFrame>();
         public int Seed { get; set; }
         public long OnlineId { get; set; }
-
-        public void Write(string path)
-        {
-            ReplayEncoder.Encode(this, path);
-        }
     }
 }

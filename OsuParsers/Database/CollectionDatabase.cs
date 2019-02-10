@@ -9,10 +9,5 @@ namespace OsuParsers.Database
         public int OsuVersion { get; set; }
         public int CollectionCount { get; set; }
         public List<Collection> Collections { get; private set; } = new List<Collection>();
-
-        public void Write(string path)
-        {
-            DatabaseEncoder.EncodeCollectionDatabase(path, this);
-        }
     }
 }
