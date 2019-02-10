@@ -51,31 +51,31 @@ namespace OsuParsers.Decoders
         {
             switch (currentSection)
             {
-                case Enums.Sections.Format:
+                case Sections.Format:
                     Beatmap.Version = Convert.ToInt32(line.Split(new string[] { "osu file format v" }, StringSplitOptions.None)[1]);
                     break;
-                case Enums.Sections.General:
+                case Sections.General:
                     ParseGeneral(line);
                     break;
-                case Enums.Sections.Editor:
+                case Sections.Editor:
                     ParseEditor(line);
                     break;
-                case Enums.Sections.Metadata:
+                case Sections.Metadata:
                     ParseMetadata(line);
                     break;
-                case Enums.Sections.Difficulty:
+                case Sections.Difficulty:
                     ParseDifficulty(line);
                     break;
-                case Enums.Sections.Events:
+                case Sections.Events:
                     ParseEvents(line);
                     break;
-                case Enums.Sections.TimingPoints:
+                case Sections.TimingPoints:
                     ParseTimingPoints(line);
                     break;
-                case Enums.Sections.Colours:
+                case Sections.Colours:
                     ParseColours(line);
                     break;
-                case Enums.Sections.HitObjects:
+                case Sections.HitObjects:
                     ParseHitObjects(line);
                     break;
             }

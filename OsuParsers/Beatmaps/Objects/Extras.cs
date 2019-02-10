@@ -5,6 +5,7 @@ namespace OsuParsers.Beatmaps.Objects
     public class Extras
     {
         public Extras() { }
+
         public Extras(SampleSet sampleSet, SampleSet additionSet, int customIndex, int volume, string sampleFileName)
         {
             SampleSet = sampleSet;
